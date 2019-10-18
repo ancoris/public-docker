@@ -3,6 +3,7 @@ FROM ancoris/appengine
 RUN apt-get install -y python3 python3-pip
 RUN pip3 install --upgrade pip
 RUN pip3 install google-cloud-datastore beautifulsoup4
+RUN cp /usr/local/bin/pip2 /usr/local/bin/pip
 
 RUN pip install --no-cache-dir \
         jinja2==2.6 \
